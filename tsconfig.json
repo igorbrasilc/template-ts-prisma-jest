@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es2019" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "allowJs": true,
+    "lib": [
+      "es6"
+    ] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
+    "removeComments": true,
+    "module": "CommonJS" /* Specify what module code is generated. */,
+    "rootDir": "./src" /* Specify the root folder within your source files. */,
+    "outDir": "./dist",
+    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+    "baseUrl": "./",
+    "paths": {
+      "@controllers/*": ["./src/controllers/*"],
+      "@services/*": ["./src/services/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@config/*": ["./src/config/*"],
+      "@routers/*": ["./src/routers/*"],
+      "@schemas/*": ["./src/schemas/*"],
+      "@repositories/*": ["./src/repositories/*"],
+      "@middlewares/*": ["./src/middlewares/*"],
+      "@app": ["./app.js"],
+      "@server": ["./server.js"]
+    },
+    "strict": false /* Enable all strict type-checking options. */,
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "resolveJsonModule": true,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+  },
+  "include": ["src/**/*"]
+}
