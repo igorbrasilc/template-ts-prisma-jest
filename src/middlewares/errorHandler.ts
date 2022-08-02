@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 
-import AppLog from "@utils/AppLog";
+import AppLog from "../utils/AppLog";
 import { errorTypeToStatusCode, isAppError } from "../utils/errorUtils";
 import "express-async-errors";
 

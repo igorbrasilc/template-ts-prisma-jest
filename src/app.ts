@@ -3,8 +3,8 @@ import helmet from "helmet";
 import cors from "cors";
 import "express-async-errors";
 
-import router from "@routers/index";
-import errorHandler from "@middlewares/errorHandler";
+import router from "./routers/index";
+import errorHandler from "./middlewares/errorHandler";
 
 const app = express();
 app.use(json());

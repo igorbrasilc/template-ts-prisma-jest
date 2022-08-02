@@ -1,9 +1,8 @@
 import { Response, Request } from "express";
 
-import AppLog from "@utils/AppLog";
+import AppLog from "./utils/AppLog";
 import app from "./app";
 import "dotenv/config";
-import { unauthorizedError } from "@utils/errorUtils";
 
 const { PORT, HOST } = process.env;
 

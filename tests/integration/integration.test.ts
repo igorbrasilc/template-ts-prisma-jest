@@ -1,6 +1,6 @@
 import supertest from "supertest";
-import prisma from "../src/config/database";
-import app from "../src/app";
+import prisma from "../../src/config/database";
+import app from "../../src/app";
 
 beforeEach(async () => {
   // function to be executed before each test
@@ -13,6 +13,7 @@ describe("app test suite", () => {
     // connection to db in tests will be:
     // const result = await supertest(app).post('/your-endpoint').send(body);
     // const status = result.status;
+    expect("best template").toBe("best template");
   });
 });
 
